@@ -1,0 +1,156 @@
+
+* {
+    font-family: Arial;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #383734;
+}
+@font-face {
+    font-family: "Oswald-Light";
+    src: url("fonts/Oswald-Light.ttf");
+}
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("fonts/Oswald-Bold.ttf");
+}
+@font-face {
+    font-family: "Oswald-LightItalic";
+    src: url("fonts/Oswald-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Oswald-Medium";
+    src: url("fonts/Oswald-Medium.ttf");
+}
+@font-face {
+    font-family: "DroidSerif-Italic";
+    src: url("fonts/DroidSerif-Italic.ttf");
+}
+@font-face {
+    font-family: "DroidSerif-Regular";
+    src: url("fonts/DroidSerif-Regular.ttf");
+}
+.navbar {
+    background-color: #383734;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+nav button.navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    font-size: 21px;
+}
+nav ul.nav {
+    float: right;
+}
+nav a.navbar-brand {
+}
+nav a.navbar-brand img {
+}
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+}
+nav ul.nav li {
+    margin-left: 13px !important;
+    margin-top: 2px;
+}
+nav ul.nav li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Oswald-Light";
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+nav ul.nav li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+nav ul.nav li a:focus {
+}
+nav ul.nav li a:active {
+    background-color: transparent;
+    color: #f7941e;
+}
+nav ul.nav li a:active a:hover {
+    background-color: transparent;
+    color: #f7941e;
+}
+nav ul.nav li a:active a:focus {
+}
+#CollapsingNavbar.collapsing li, #CollapsingNavbar.collapse.in li {
+    width: 100%;
+}
+div.slide {
+    padding: 130px 0 80px;
+}
+div.slide h2 {
+    color: #f7941e;
+    font-family: "Oswald-Light";
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+div.slide h3 {
+    color: #e6e7e8;
+    font-family: "Oswald-Light";
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+    text-align: left;
+}
+#quemsomos {
+}
+#identidade {
+    background-color: #f7941e;
+}
+#identidade h2 {
+    color: black;
+}
+#identidade h3 {
+}
+#desenvolvimento {
+    background-color: #2f2d2a;
+}
+#desenvolvimento h2 {
+}
+#desenvolvimento h3 {
+}
+#sistemas {
+}
+#sistemas h2 {
+}
+#sistemas h3 {
+}
+#consultoria {
+    background: #f7941e none repeat scroll 0 0;
+}
+#consultoria h2 {
+    color: black;
+}
+#consultoria h3 {
+}
+#mentoring {
+}
+#mentoring h2 {
+}
+#mentoring h3 {
+}
+#contato {
+}
+#contato input {
+}
+#contato h2 {
+}
+#contato h3 {
+}
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #f7941e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
+    outline: 0 none;
+}
+nav button.navbar-toggler:hover {
+    background: #f7941e;
+}
