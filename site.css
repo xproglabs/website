@@ -70,14 +70,14 @@ nav ul.nav li a:hover {
 }
 nav ul.nav li a:focus {
 }
-nav ul.nav li a:active {
+nav ul.nav li a:active, nav ul.nav li a:hover, nav ul.nav li.active a  {
     background-color: transparent;
     color: #f7941e;
 }
-nav ul.nav li a:active a:hover {
+/**nav ul.nav li a:active a:hover {
     background-color: transparent;
     color: #f7941e;
-}
+}**/
 nav ul.nav li a:active a:focus {
 }
 #CollapsingNavbar.collapsing li, #CollapsingNavbar.collapse.in li {
