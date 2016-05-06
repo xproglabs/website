@@ -1,14 +1,31 @@
 // topbar fixo com scroll
 
-$(window).scroll(function() { 
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
- 
+
     if (scroll > 500) {
         $('.topbar').addClass('topbarFixo');
     } else {
         $('.topbar').removeClass('topbarFixo');
     }
 });
+
+(function($){
+
+    $(window).ready(function(){
+        var menuContainer = $("nav").find(".navbar-nav");
+        var selectMenu = function(hash){
+            if(hash && hash != "undefined"){
+                $(menuContainer).find("li").removeClass("active");
+                $(menuContainer).find("li").find("a[href="+hash+"]").parent("li").addClass("active");
+            }
+        }
+        $(window).on('hashchange', function(e) {
+            selectMenu(document.location.hash);
+        });
+        selectMenu(document.location.hash);
+    });
+})(jQuery)
 
 
 
