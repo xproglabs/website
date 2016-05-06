@@ -8,6 +8,10 @@
 body {
     background-color: #383734;
 }
+input, textarea, button {
+    font-size: 13px !important;
+    color: black !important;
+}
 @font-face {
     font-family: "Oswald-Light";
     src: url("fonts/Oswald-Light.ttf");
@@ -36,6 +40,10 @@ body {
     background-color: #383734;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0;
+}
+.navbar-header {
+    float: right;
+    width: 100%;
 }
 nav button.navbar-toggler {
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -82,6 +90,8 @@ nav ul.nav li a:active a:focus {
 }
 #CollapsingNavbar.collapsing li, #CollapsingNavbar.collapse.in li {
     width: 100%;
+    float: right;
+    text-align: right;
 }
 div.slide {
     padding: 130px 0 80px;
