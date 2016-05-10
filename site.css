@@ -115,6 +115,7 @@ div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
     padding-top: 20px;
+    height: 500px;
 
 }
 img.card-img-top {
@@ -133,14 +134,13 @@ img.card-img-top {
 }
 
 
-
 p.card-text {
     color: #e6e7e8;
     font-size: 15px;
     font-family: "Oswald-Light";
 
-
 }
+
 h4.card-title {
     text-align: center;
     font-family: "Oswald-Medium";
