@@ -111,6 +111,43 @@ div.slide h3 {
     line-height: 1.3em;
     text-align: left;
 }
+div.card {
+    background-color: transparent;
+    border: 1px solid #f7941e;
+    padding-top: 20px;
+
+}
+img.card-img-top {
+    border-radius: 50%;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    border: 1px solid #000000;
+    background-color: none;
+
+
+}
+.card .img-circle {
+     margin:;
+
+}
+
+
+
+p.card-text {
+    color: #e6e7e8;
+    font-size: 15px;
+    font-family: "Oswald-Light";
+
+
+}
+h4.card-title {
+    text-align: center;
+    font-family: "Oswald-Medium";
+    color: #f7941e;     
+
+
+}
 #quemsomos {
 }
 #identidade {
