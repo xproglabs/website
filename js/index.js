@@ -64,6 +64,7 @@
                 $.ajax({
                     url:$(form).attr("action"),
                     data:formData,
+                    dataType:'json',
                     method:'POST',
                     complete:function(data){
                         if(data.error == false){
