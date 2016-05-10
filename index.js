@@ -1,6 +1,5 @@
 // topbar fixo com scroll
 (function($){
-
     $(window).ready(function(){
         var menuContainer = $("nav").find(".navbar-nav");
         var topMenuHeight = $('.navbar.navbar-fixed-top').height();
@@ -10,6 +9,13 @@
             var toSelect = $(menuContainer).find("li").find("a[href="+hash+"]");
             if(toSelect.size() > 0){
                 $(toSelect).parent("li").addClass("active");
+                if(document.location.hash != hash) {
+                    if(history.pushState) {
+                        history.pushState(null, null, hash);
+                    } else {
+                        document.location.hash = hash;
+                    }
+                }
                 return true;
             }
             return false;
@@ -45,6 +51,7 @@
         $(window).on('hashchange', function(e) {
             selectMenu(document.location.hash);
         });
+        // on load
         selectMenu(document.location.hash);
     });
 })(jQuery)
