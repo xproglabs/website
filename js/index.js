@@ -57,7 +57,24 @@
 
         $("#contact").validate({
             submitHandler: function(form) {
-                $(form).ajaxSubmit();
+                // disable form fields before send
+                var formData = $(form).serialize();
+                console.log(formData);
+                $(form).find("input, textarea").attr("disabled","disabled");
+                $.ajax({
+                    url:$(form).attr("action"),
+                    data:formData,
+                    method:'POST',
+                    complete:function(data){
+                        if(data.error == false){
+                            alert("Seu email foi enviado com sucesso!")
+                            $(form).trigger('reset');
+                        } else {
+                            alert("Ocorreu um erro ao enviar o email!")
+                            $(form).find("input, textarea").attr("disabled",null);
+                        }
+                    }
+                })
             }
         });
     });
