@@ -174,11 +174,11 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<!-- div.slide[name="contato"] input[name="nome"] -->
-										<input type="text" class="form-control" name="nome" placeholder="Nome">
+										<input type="text" class="form-control" name="nome" placeholder="Nome" required>
 									</div>
 									<div class="form-group">
 										<!-- div.slide[name="contato"] input[name="email"] -->
-										<input type="text" class="form-control" name="email" placeholder="E-mail">
+										<input type="email" class="form-control" name="email" placeholder="E-mail" required>
 									</div>
 									<div class="form-group">
 										<!-- div.slide[name="contato"] input[name="telefone"] -->
@@ -186,13 +186,13 @@
 									</div>
 									<div class="form-group">
 										<!-- div.slide[name="contato"] input[name="assunto"] -->
-										<input type="text" class="form-control" name="assunto" placeholder="Assunto">
+										<input type="text" class="form-control" name="assunto" placeholder="Assunto" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<!-- textarea -->
-										<textarea class="form-control" rows="5" placeholder="Mensagem"></textarea>
+										<textarea class="form-control" rows="5" placeholder="Mensagem" required></textarea>
 									</div>
 									<div class="form-group">
 										<button class="btn btn-warning" name="submit">Enviar</button>
@@ -212,6 +212,9 @@
 		<!-- adiciona a folha de estilos do site -->
 		<link rel="stylesheet" href="site.css">
 		<!-- adiciona os scripts do site -->
-		<script src="index.js"></script>
+		<script src="js/index.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/localization/messages_pt_BR.js"></script>
 	</body>
 </html>
