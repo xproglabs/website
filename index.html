@@ -170,7 +170,7 @@
 					<div class="col-xs-1"></div>
 					<div class="col-xs-10">
 						<div class="row">
-							<form onsubmit="return false;" id="contact">
+							<form action="contact.php" method="POST" onsubmit="return false;" id="contact">
 								<div class="col-md-6">
 									<div class="form-group">
 										<!-- div.slide[name="contato"] input[name="nome"] -->
@@ -192,7 +192,7 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<!-- textarea -->
-										<textarea class="form-control" rows="5" placeholder="Mensagem" required></textarea>
+										<textarea class="form-control" rows="5" placeholder="Mensagem" name="message" required></textarea>
 									</div>
 									<div class="form-group">
 										<button class="btn btn-warning" name="submit">Enviar</button>
