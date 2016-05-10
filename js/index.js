@@ -53,6 +53,13 @@
         });
         // on load
         selectMenu(document.location.hash);
+
+
+        $("#contact").validate({
+            submitHandler: function(form) {
+                $(form).ajaxSubmit();
+            }
+        });
     });
 })(jQuery)
 
