@@ -54,6 +54,9 @@ nav button.navbar-toggler {
 nav ul.nav {
     float: right;
 }
+#CollapsingNavbar.collapsing ul.nav {
+    display: none;
+}
 nav a.navbar-brand {
 }
 nav a.navbar-brand img {
