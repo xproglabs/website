@@ -59,7 +59,7 @@
             submitHandler: function(form) {
                 // disable form fields before send
                 var formData = $(form).serialize();
-                console.log(formData);
+                // console.log(formData);
                 $(form).find("input, textarea").attr("disabled","disabled");
                 $.ajax({
                     url:$(form).attr("action"),
