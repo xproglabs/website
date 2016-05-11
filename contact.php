@@ -26,7 +26,7 @@
             'X-Mailer: PHP/' . phpversion();
             $msg = file_get_contents("contact.html");
             $msg = sprintf($formName, $formEmail, $formPhone, $formSubject, $formMessage);
-            if (mail("contato@xproglabs.com.br", "Contato no site", $msg, $headers)) {
+            if (mail("contato@xproglabs.com", "Contato no site", $msg, $headers)) {
                 $error["error"] = false;
             } else
                 $error["error"] = true;
