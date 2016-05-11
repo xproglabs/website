@@ -50,6 +50,7 @@ nav button.navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
     float: right;
     font-size: 21px;
+    background-color: #e6e7e8 ;
 }
 nav ul.nav {
     float: right;
@@ -118,8 +119,8 @@ div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
     padding-top: 20px;
-    height: 420px;
-
+    height: 530px;
+0
 }
 img.card-img-top {
     border-radius: 50%;
