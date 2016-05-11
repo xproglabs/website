@@ -67,6 +67,8 @@
                     dataType:'json',
                     method:'POST',
                     complete:function(data){
+                        console.log(data);
+                        data = data.responseJSON;
                         if(data.error == false){
                             alert("Seu email foi enviado com sucesso!")
                             $(form).trigger('reset');
