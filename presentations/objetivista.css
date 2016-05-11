@@ -1,0 +1,51 @@
+p {
+    font-family: "Oswald-Light";
+    font-size: 16px;
+}
+div.slide {
+    padding-top: 130px !important;
+    padding-bottom: 80px !important;
+}
+nav h1 {
+    color: rgba(255,255,255,0.9);
+    font-family: "Oswald-Light";
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    float: left;
+}
+.xp_orange {
+    background-color: #EE9132;
+}
+.xp_orange h2 {
+    color: #383734 !important;
+}
+.xp_orange h3 {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.xp_gray_h {
+    background-color: #383734;
+}
+.xp_gray_h h2 {
+    color: #EE9132 !important;
+}
+.xp_gray_h h3 {
+    color: rgba(255,255,255,0.9) !important;
+}
+.xp_gray_h p {
+    color: #6D6D6E;
+}
+
+.xp_gray_l {
+    background-color: #484746;
+}
+.xp_gray_l h2 {
+    color: #EE9132 !important;
+}
+.xp_gray_l h3 {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.xp_gray_l p {
+    color: #6D6D6E;
+}
