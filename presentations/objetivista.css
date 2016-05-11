@@ -3,8 +3,8 @@ p {
     font-size: 16px;
 }
 div.slide {
-    padding-top: 130px !important;
-    padding-bottom: 80px !important;
+    padding-top: 95px !important;
+    padding-bottom: 30px !important;
 }
 nav h1 {
     color: rgba(255,255,255,0.9);
@@ -12,6 +12,10 @@ nav h1 {
     font-size: 15px;
     padding: 10px 0px 0px 0px;
     float: left;
+}
+#home {
+    padding-top: 125px !important;
+    padding-bottom: 60px !important;
 }
 .xp_orange {
     background-color: #EE9132;
@@ -21,8 +25,8 @@ nav h1 {
 }
 .xp_orange h3 {
     color: rgba(255,255,255,0.9) !important;
+    font-size: 26px !important;
 }
-
 .xp_gray_h {
     background-color: #383734;
 }
