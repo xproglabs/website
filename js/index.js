@@ -74,8 +74,8 @@
                             $(form).trigger('reset');
                         } else {
                             alert("Ocorreu um erro ao enviar o email!")
-                            $(form).find("input, textarea").attr("disabled",null);
                         }
+                        $(form).find("input, textarea").attr("disabled",null);
                     }
                 })
             }
