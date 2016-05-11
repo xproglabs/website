@@ -110,17 +110,24 @@ div.slide h2 {
 div.slide h3 {
     color: #e6e7e8;
     font-family: "Oswald-Light";
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: left;
+}
+div.slide h3.about {
+    color: #e6e7e8;
+    font-family: "Oswald-Light";
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+    text-align: center;
 }
 div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
     padding-top: 20px;
-    height: 530px;
-0
+    height: 470px;
 }
 img.card-img-top {
     border-radius: 50%;
@@ -163,12 +170,6 @@ h4.card-title {
 #desenvolvimento h2 {
 }
 #desenvolvimento h3 {
-}
-#sistemas {
-}
-#sistemas h2 {
-}
-#sistemas h3 {
 }
 #consultoria {
     background: #f7941e none repeat scroll 0 0;
