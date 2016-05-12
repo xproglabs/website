@@ -1,17 +1,4 @@
 
-* {
-    font-family: Arial;
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: #383734;
-}
-input, textarea, button {
-    font-size: 13px !important;
-    color: black !important;
-}
 @font-face {
     font-family: "Oswald-Light";
     src: url("fonts/Oswald-Light.ttf");
@@ -36,6 +23,24 @@ input, textarea, button {
     font-family: "DroidSerif-Regular";
     src: url("fonts/DroidSerif-Regular.ttf");
 }
+* {
+    font-family: "Oswald-Light";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #383734;
+}
+input, textarea, button {
+    color: black !important;
+    font-size: 13px !important;
+}
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #f7941e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
+    outline: 0 none;
+}
 .navbar {
     background-color: #383734;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -46,17 +51,17 @@ input, textarea, button {
     width: 100%;
 }
 nav button.navbar-toggler {
+    background-color: #e6e7e8;
     border: 1px solid rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.5);
     float: right;
     font-size: 21px;
-    background-color: #e6e7e8 ;
+}
+nav button.navbar-toggler:hover {
+    background: #f7941e none repeat scroll 0 0;
 }
 nav ul.nav {
     float: right;
-}
-#CollapsingNavbar.collapsing ul.nav {
-    display: none;
 }
 nav a.navbar-brand {
 }
@@ -71,7 +76,6 @@ nav ul.nav li {
 }
 nav ul.nav li a {
     color: rgba(255, 255, 255, 0.7);
-    font-family: "Oswald-Light";
     font-size: 13px;
     letter-spacing: 0.08em;
     padding-left: 6px;
@@ -82,123 +86,129 @@ nav ul.nav li a:hover {
 }
 nav ul.nav li a:focus {
 }
-nav ul.nav li a:active, nav ul.nav li a:hover, nav ul.nav li.active a  {
+nav ul.nav li a:active, nav ul.nav li a:hover, nav ul.nav li.active a {
     background-color: transparent;
     color: #f7941e;
 }
-/**nav ul.nav li a:active a:hover {
-    background-color: transparent;
-    color: #f7941e;
-}**/
 nav ul.nav li a:active a:focus {
 }
+#CollapsingNavbar.collapsing ul.nav {
+    display: none;
+}
 #CollapsingNavbar.collapsing li, #CollapsingNavbar.collapse.in li {
-    width: 100%;
     float: right;
     text-align: right;
+    width: 100%;
 }
 div.slide {
-    padding: 130px 0 80px;
+    padding-bottom: 30px !important;
+    padding-top: 95px !important;
+}
+#home {
+    padding-bottom: 75px !important;
+    padding-top: 140px !important;
 }
 div.slide h2 {
-    color: #f7941e;
-    font-family: "Oswald-Light";
     font-size: 30px;
     padding-bottom: 30px;
     text-align: left;
 }
 div.slide h3 {
-    color: #e6e7e8;
-    font-family: "Oswald-Light";
     font-size: 25px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: left;
 }
 div.slide h3.about {
-    color: #e6e7e8;
-    font-family: "Oswald-Light";
     font-size: 30px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: center;
 }
-div.card {
+div.slide div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
+    margin-top: 30px !important;
     padding-top: 20px;
-    height: 470px;
+    height: 480px;
 }
-img.card-img-top {
+div.slide img.card-img-top {
+    border: 1px solid #000000;
     border-radius: 50%;
     display: inline-block;
     height: 130px;
     width: 130px;
-    border: 1px solid #000000;
-    background-color: none;
-
-
 }
-
-p.card-text {
+div.slide p.card-text {
     color: #e6e7e8;
-    font-size: 15px;
-    font-family: "Oswald-Light";
-
+    font-size: 16px;
 }
-
-h4.card-title {
-    text-align: center;
+div.slide h4.card-title {
+    color: #f7941e;
     font-family: "Oswald-Medium";
-    color: #f7941e;     
-
-
+    text-align: center;
 }
-#quemsomos {
+.xp_orange {
+    background-color: #ee9132;
 }
-#identidade {
-    background-color: #f7941e;
+.xp_orange h2 {
+    color: rgba(255, 255, 255, 1) !important;
 }
-#identidade h2 {
-    color: black;
+.xp_orange h3 {
+    color: #383734 !important;
 }
-#identidade h3 {
+.xp_orange p {
 }
-#desenvolvimento {
-    background-color: #2f2d2a;
+.xp_gray_h {
+    background-color: #383734;
 }
-#desenvolvimento h2 {
+.xp_gray_h h2 {
+    color: #ee9132 !important;
 }
-#desenvolvimento h3 {
+.xp_gray_h h3 {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 22px !important;
+    margin-bottom: 40px !important;
 }
-#consultoria {
-    background: #f7941e none repeat scroll 0 0;
+.xp_gray_h p {
+    color: #9d9d8e !important;
+    padding-bottom: 20px !important;
 }
-#consultoria h2 {
-    color: black;
+.xp_gray_l {
+    background-color: #484746;
 }
-#consultoria h3 {
+.xp_gray_l h2 {
+    color: #ee9132 !important;
 }
-#mentoring {
-    background-color: #2f2d2a;
+.xp_gray_l h3 {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 22px !important;
+    margin-bottom: 40px !important;
 }
-#mentoring h2 {
+.xp_gray_l p {
+    color: #9d9d8e !important;
+    padding-bottom: 20px !important;
 }
-#mentoring h3 {
+.card p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 16px;
 }
-#contato {
+.card h4.card-duration {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Oswald-Medium";
+    font-size: 16px;
+    text-align: center;
 }
-#contato input {
+.card p.card-text {
+    padding: 10px;
+    text-align: center !important;
 }
-#contato h2 {
+.xp_orange .card {
+    border-color: #383734 !important;
 }
-#contato h3 {
+.xp_orange .card h4.card-title {
+    color: #383734 !important;
 }
-input.form-control:focus, textarea.form-control:focus {
-    border-color: #f7941e;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
-    outline: 0 none;
-}
-nav button.navbar-toggler:hover {
-    background: #f7941e;
+.xp_orange .card p {
+    color: #383734 !important;
 }
