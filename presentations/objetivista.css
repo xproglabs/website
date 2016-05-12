@@ -6,16 +6,9 @@ div.slide {
     padding-top: 95px !important;
     padding-bottom: 30px !important;
 }
-nav h1 {
-    color: rgba(255,255,255,0.9);
-    font-family: "Oswald-Light";
-    font-size: 15px;
-    padding: 10px 0px 0px 0px;
-    float: left;
-}
 #home {
-    padding-top: 125px !important;
-    padding-bottom: 60px !important;
+    padding-top: 140px !important;
+    padding-bottom: 75px !important;
 }
 .xp_orange {
     background-color: #EE9132;
@@ -24,9 +17,12 @@ nav h1 {
     color: #383734 !important;
 }
 .xp_orange h3 {
-    color: rgba(255,255,255,0.9) !important;
+    color: rgba(255,255,255,1) !important;
     font-size: 26px !important;
 }
+.xp_orange p {
+}
+
 .xp_gray_h {
     background-color: #383734;
 }
@@ -38,6 +34,7 @@ nav h1 {
 }
 .xp_gray_h p {
     color: #6D6D6E;
+    padding-bottom: 20px !important;
 }
 
 .xp_gray_l {
@@ -49,7 +46,26 @@ nav h1 {
 .xp_gray_l h3 {
     color: rgba(255,255,255,0.9) !important;
 }
-
 .xp_gray_l p {
     color: #9D9D8E;
+    padding-bottom: 20px !important;
+}
+
+.card {
+    margin-top: 30px !important;
+    height: auto !important;
+}
+.card p {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 16px;
+}
+.card h4.card-duration {
+    text-align: center;
+    font-family: "Oswald-Medium";
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+}
+.card p.card-text {
+    text-align: center !important;
+    padding: 24px;
 }
