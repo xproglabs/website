@@ -14,10 +14,10 @@ div.slide {
     background-color: #EE9132;
 }
 .xp_orange h2 {
-    color: #383734 !important;
+    color: rgba(255,255,255,1) !important;
 }
 .xp_orange h3 {
-    color: rgba(255,255,255,1) !important;
+    color: #383734 !important;
     font-size: 26px !important;
 }
 .xp_orange p {
@@ -33,7 +33,7 @@ div.slide {
     color: rgba(255,255,255,0.9) !important;
 }
 .xp_gray_h p {
-    color: #6D6D6E;
+    color: #9D9D8E;
     padding-bottom: 20px !important;
 }
 
@@ -68,4 +68,16 @@ div.slide {
 .card p.card-text {
     text-align: center !important;
     padding: 24px;
+}
+
+.xp_orange .card {
+    border-color: #383734;
+}
+
+.xp_orange .card h4.card-title {
+    color: #383734 !important;
+}
+
+.xp_orange .card p {
+    color: #383734 !important;;
 }
