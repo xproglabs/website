@@ -100,7 +100,7 @@ nav ul.nav li a:active a:focus {
     text-align: right;
     width: 100%;
 }
-div.slide {
+div.xp_slide {
     padding-bottom: 30px !important;
     padding-top: 95px !important;
 }
@@ -108,42 +108,42 @@ div.slide {
     padding-bottom: 75px !important;
     padding-top: 140px !important;
 }
-div.slide h2 {
+div.xp_slide h2 {
     font-size: 30px;
     padding-bottom: 30px;
     text-align: left;
 }
-div.slide h3 {
+div.xp_slide h3 {
     font-size: 25px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: left;
 }
-div.slide h3.about {
+div.xp_slide h3.about {
     font-size: 30px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: center;
 }
-div.slide div.card {
+div.xp_slide div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
     margin-top: 30px !important;
     padding-top: 20px;
     height: 480px;
 }
-div.slide img.card-img-top {
+div.xp_slide img.card-img-top {
     border: 1px solid #000000;
     border-radius: 50%;
     display: inline-block;
     height: 130px;
     width: 130px;
 }
-div.slide p.card-text {
+div.xp_slide p.card-text {
     color: #e6e7e8;
     font-size: 16px;
 }
-div.slide h4.card-title {
+div.xp_slide h4.card-title {
     color: #f7941e;
     font-family: "Oswald-Medium";
     text-align: center;
@@ -211,4 +211,36 @@ div.slide h4.card-title {
 }
 .xp_orange .card p {
     color: #383734 !important;
+}
+/* classes do carrossel */
+.carousel-control {
+    background-image: none !important;
+}
+
+
+/*
+.carousel-control            { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+*/
+
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev        { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev        { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev        { left: -50%; }    
 }
