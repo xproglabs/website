@@ -25,7 +25,7 @@
         /* function para chamar o carousel */
          $(".owl-carousel").owlCarousel({
             loop:true,
-            margin:10,
+            margin:30,
             responsiveClass:true,
             responsive:{
                 0:{

@@ -125,12 +125,41 @@ div.xp_slide h3.about {
     line-height: 1.3em;
     text-align: center;
 }
+/* card xs */
 div.xp_slide div.card {
     background-color: transparent;
     border: 1px solid #f7941e;
+    margin-left: 10%;
     margin-top: 30px !important;
     padding-top: 20px;
-    height: 480px;
+    height: 400px;
+    width: 80%;
+}
+/* breakpoint sm */
+@media (min-width: 544px) {
+    div.xp_slide div.card {
+        height: 440px;
+        margin: 0%;
+        width: 100%;
+    }
+}
+/* breakpoint md */
+@media (min-width: 768px) {
+    div.xp_slide div.card {
+        height: 400px;
+    }
+}
+/* breakpoint lg */
+@media (min-width: 992px) {
+    div.xp_slide div.card {
+        height: 480px;
+    }
+}
+/* breakpoint xl */
+@media (min-width: 1200px ) {
+    div.xp_slide div.card {
+        height: 520px;
+    }
 }
 div.xp_slide img.card-img-top {
     border: 1px solid #000000;
