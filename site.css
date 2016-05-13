@@ -217,12 +217,10 @@ div.xp_slide h4.card-title {
     background-image: none !important;
 }
 
-
 /*
 .carousel-control            { width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 */
-
 @media (max-width: 767px) {
     .carousel-inner .active.left { left: -100%; }
     .carousel-inner .next        { left:  100%; }
