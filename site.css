@@ -221,6 +221,7 @@ div.xp_slide h4.card-title {
 .carousel-control            { width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 */
+/*
 @media (max-width: 767px) {
     .carousel-inner .active.left { left: -100%; }
     .carousel-inner .next        { left:  100%; }
@@ -242,3 +243,4 @@ div.xp_slide h4.card-title {
     .carousel-inner .next        { left:  50%; }
     .carousel-inner .prev        { left: -50%; }    
 }
+*/

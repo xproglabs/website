@@ -22,20 +22,35 @@
             // }
         }
 
-        /* function para adaptar o carousel responsivo */
-        $('div.carousel[data-type="multi"] .carousel-item').each(function(){
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            for(var i=0;i<1;i++) {
-                next=next.next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
+        /* function para chamar o carousel */
+         $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                544:{
+                    items:2,
+                    nav:false
+                },
+                768:{
+                    items:2,
+                    nav:true,
+                    loop:false
+                },
+                992:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                },
+                1200:{
+                    items:4,
+                    nav:true,
+                    loop:false
                 }
-                next.children(':first-child').clone().appendTo($(this));
             }
         });
 
