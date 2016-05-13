@@ -132,7 +132,7 @@ div.xp_slide div.card {
     margin-left: 10%;
     margin-top: 30px !important;
     padding-top: 20px;
-    height: 400px;
+    height: 420px;
     width: 80%;
 }
 /* breakpoint sm */
@@ -146,7 +146,7 @@ div.xp_slide div.card {
 /* breakpoint md */
 @media (min-width: 768px) {
     div.xp_slide div.card {
-        height: 400px;
+        height: 440px;
     }
 }
 /* breakpoint lg */
