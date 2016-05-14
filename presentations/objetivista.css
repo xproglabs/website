@@ -114,16 +114,17 @@ div.slide {
     padding-top: 140px !important;
     padding-bottom: 75px !important;
 }
+#home * {
+    text-align: center;
+}
 div.slide h2 {
     font-size: 30px;
     padding-bottom: 30px;
-    text-align: left;
 }
 div.slide h3 {
     font-size: 25px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
-    text-align: left;
 }
 div.slide h3.about {
     font-size: 30px;
@@ -153,6 +154,9 @@ div.slide h4.card-title {
     text-align: center;
     font-family: "Oswald-Medium";
     color: #f7941e;     
+}
+div.slide * {
+    text-align: center !important;
 }
 /* Fim das regras dos slides */
 /* Estilo de slide laranja */
