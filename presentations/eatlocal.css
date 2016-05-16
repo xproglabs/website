@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Oswald-Light";
+    src: url("../fonts/Oswald-Light.ttf");
+}
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+    font-family: "Oswald-LightItalic";
+    src: url("../fonts/Oswald-LightItalic.ttf");
+}
+@font-face {
+    font-family: "Oswald-Medium";
+    src: url("../fonts/Oswald-Medium.ttf");
+}
+@font-face {
+    font-family: "DroidSerif-Italic";
+    src: url("../fonts/DroidSerif-Italic.ttf");
+}
+@font-face {
+    font-family: "DroidSerif-Regular";
+    src: url("../fonts/DroidSerif-Regular.ttf");
+}
+* {
+    font-family: "Oswald-Light";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #383734;
+}
+input, textarea, button {
+    font-size: 13px !important;
+    color: black !important;
+}
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #f7941e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
+    outline: 0 none;
+}
+/* Início das regras do nav */
+.navbar {
+    background-color: #383734;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+.navbar-header {
+    float: right;
+    width: 100%;
+}
+nav button.navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    font-size: 21px;
+    background-color: #e6e7e8 ;
+}
+nav button.navbar-toggler:hover {
+    background: #f7941e;
+}
+nav ul.nav {
+    float: right;
+}
+nav a.navbar-brand {
+}
+nav a.navbar-brand img {
+}
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+}
+nav ul.nav li {
+    margin-left: 13px !important;
+    margin-top: 2px;
+}
+nav ul.nav li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+nav ul.nav li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+nav ul.nav li a:focus {
+}
+nav ul.nav li a:active, nav ul.nav li a:hover, nav ul.nav li.active a  {
+    background-color: transparent;
+    color: #f7941e;
+}
+/**nav ul.nav li a:active a:hover {
+    background-color: transparent;
+    color: #f7941e;
+}**/
+nav ul.nav li a:active a:focus {
+}
+#CollapsingNavbar.collapsing ul.nav {
+    display: none;
+}
+#CollapsingNavbar.collapsing li, #CollapsingNavbar.collapse.in li {
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+/* Fim das regras do nav */
+/* Início das regras dos slides */
+div.slide {
+    padding-top: 95px !important;
+    padding-bottom: 30px !important;
+}
+#home {
+    padding-top: 140px !important;
+    padding-bottom: 75px !important;
+}
+#home * {
+    text-align: center;
+}
+div.slide h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+div.slide h3 {
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+}
+div.slide h3.about {
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+    text-align: center;
+}
+div.slide div.card {
+    background-color: transparent;
+    border: 1px solid #f7941e;
+    padding-top: 20px;
+    margin-top: 30px !important;
+}
+div.slide img.card-img-top {
+    border-radius: 50%;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    border: 1px solid #000000;
+    background-color: none;
+}
+div.slide p.card-text {
+    color: #e6e7e8;
+    font-size: 15px;
+}
+div.slide h4.card-title {
+    text-align: center;
+    font-family: "Oswald-Medium";
+    color: #f7941e;     
+}
+div.slide * {
+    text-align: center !important;
+}
+/* Fim das regras dos slides */
+/* Estilo de slide laranja */
+.xp_orange {
+    background-color: #EE9132;
+}
+.xp_orange h2 {
+    color: rgba(255,255,255,1) !important;
+}
+.xp_orange h3 {
+    color: #383734 !important;
+}
+.xp_orange p {
+}
+/* Estilo de slide cinza forte */
+.xp_gray_h {
+    background-color: #383734;
+}
+.xp_gray_h h2 {
+    color: #EE9132 !important;
+}
+.xp_gray_h h3 {
+    color: rgba(255,255,255,0.9) !important;
+}
+.xp_gray_h p {
+    color: #9D9D8E !important;
+    padding-bottom: 20px !important;
+}
+/* Estilo de slide cinza franco */
+.xp_gray_l {
+    background-color: #484746;
+}
+.xp_gray_l h2 {
+    color: #EE9132 !important;
+}
+.xp_gray_l h3 {
+    color: rgba(255,255,255,0.9) !important;
+}
+.xp_gray_l p {
+    color: #9D9D8E  !important;
+    padding-bottom: 20px !important;
+}
+/* estilo de card no slide */
+.card {
+    
+}
+.card p {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 16px;
+}
+.card h4.card-duration {
+    text-align: center;
+    font-family: "Oswald-Medium";
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+}
+.card p.card-text {
+    text-align: center !important;
+    padding: 10px;
+}
+/* estilo de card no slide laranja */
+.xp_orange .card {
+    border-color: #383734 !important;
+}
+.xp_orange .card h4.card-title {
+    color: #383734 !important;
+}
+.xp_orange .card p {
+    color: #383734 !important;;
+}
