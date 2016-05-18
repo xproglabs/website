@@ -173,7 +173,7 @@ div.slide * {
 }
 /* Estilo de slide cinza forte */
 .xp_gray_h {
-    background-color: #383734;
+    background-color: #484746;
 }
 .xp_gray_h h2 {
     color: #EE9132 !important;
@@ -185,9 +185,9 @@ div.slide * {
     color: #9D9D8E !important;
     padding-bottom: 20px !important;
 }
-/* Estilo de slide cinza franco */
+/* Estilo de slide cinza fraco */
 .xp_gray_l {
-    background-color: #484746;
+    background-color: #383734;
 }
 .xp_gray_l h2 {
     color: #EE9132 !important;
