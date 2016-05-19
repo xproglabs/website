@@ -106,11 +106,13 @@
                         console.log(data);
                         data = data.responseJSON;
                         if(data.error == false){
-                            $('#messageSuccess').show();
+                            //$('#messageSuccess').show();
+                            alert('Seu email foi enviado com sucesso.');
                             // limpa os campos do form
                             $(form).trigger('reset');
                         } else {
-                            $('#messageErrorSMTP').show();
+                            //$('#messageErrorSMTP').show();
+                            alert('Há um erro no servidor, tente mais tarde.');
                         }
                         $(form).find("input, textarea").attr("disabled",null);
                     }
@@ -120,9 +122,12 @@
             wrapper: "li",
             invalidHandler: function(event, validator) {
                 // exibe a mensagem de erro
+                /*
                 $('#messageErrorSMTP').hide();
                 $('#messageSuccess').hide();
                 $('#messageError').show();
+                */
+                alert('Revise os campos do formulário e tente novamente.');
             }
         });
     });
