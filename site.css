@@ -36,11 +36,6 @@ input, textarea, button {
     color: black !important;
     font-size: 13px !important;
 }
-input.form-control:focus, textarea.form-control:focus {
-    border-color: #f7941e;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
-    outline: 0 none;
-}
 .navbar {
     background-color: #383734;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -273,3 +268,21 @@ div.xp_slide h4.card-title {
     .carousel-inner .prev        { left: -50%; }    
 }
 */
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #f7941e;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);
+    outline: 0 none;
+}
+#contato form #messageBox {
+    display: none !important;
+    color: white;
+}
+#contato form #messageSuccess,
+#contato form #messageError,
+#contato form #messageErrorSMTP {
+    display: none;
+    color: white;
+    float: left;
+    padding: 5px 0px 0px 15px;
+}

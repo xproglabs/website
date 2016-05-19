@@ -85,13 +85,18 @@
         // on load
         selectMenu(document.location.hash);
 
-
+        /* validação do formulário de contato */
         $("#contact").validate({
             submitHandler: function(form) {
+                // esconde mensagem de validação
+                $('#messageError').hide();
+                $('#messageErrorSMTP').hide();
+                $('#messageSuccess').hide();
                 // disable form fields before send
                 var formData = $(form).serialize();
                 // console.log(formData);
                 $(form).find("input, textarea").attr("disabled","disabled");
+                /* faz a requisição para enviar o formulário */
                 $.ajax({
                     url:$(form).attr("action"),
                     data:formData,
@@ -101,14 +106,23 @@
                         console.log(data);
                         data = data.responseJSON;
                         if(data.error == false){
-                            alert("Seu email foi enviado com sucesso!")
+                            $('#messageSuccess').show();
+                            // limpa os campos do form
                             $(form).trigger('reset');
                         } else {
-                            alert("Ocorreu um erro ao enviar o email!")
+                            $('#messageErrorSMTP').show();
                         }
                         $(form).find("input, textarea").attr("disabled",null);
                     }
                 })
+            },
+            errorLabelContainer: "#messageBox",
+            wrapper: "li",
+            invalidHandler: function(event, validator) {
+                // exibe a mensagem de erro
+                $('#messageErrorSMTP').hide();
+                $('#messageSuccess').hide();
+                $('#messageError').show();
             }
         });
     });

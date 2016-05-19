@@ -250,7 +250,12 @@
 										<textarea class="form-control" rows="5" placeholder="Mensagem" name="message" required></textarea>
 									</div>
 									<div class="form-group">
-										<button class="btn btn-warning" name="submit">Enviar</button>
+										<button class="btn btn-warning" name="submit" style="float: left;">Enviar</button>
+										<!-- div para agrupar as mensagens -->
+										<div id="messageBox"></div>
+										<div id="messageError">Revise os campos do formulário e tente novamente.</div>
+										<div id="messageErrorSMTP">Há um erro no servidor, tente mais tarde.</div>
+										<div id="messageSuccess">Seu email foi enviado com sucesso.</div>
 									</div>
 								</div>
 							</form>
