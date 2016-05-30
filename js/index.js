@@ -4,6 +4,7 @@
         var menuContainer = $("nav").find(".navbar-nav");
         var topMenuHeight = $('.navbar.navbar-fixed-top').height();
         var selectMenu = function(hash){
+            $(menuContainer).parents(".navbar-toggleable-sm").removeClass("in");
             if(!hash || hash == "undefined") hash = "#home";
             $(menuContainer).find("li").removeClass("active");
             var toSelect = $(menuContainer).find("li").find("a[href="+hash+"]");
