@@ -103,6 +103,9 @@ div.xp_slide {
     padding-bottom: 75px !important;
     padding-top: 140px !important;
 }
+#metodologia{
+    padding-bottom: 70px !important;
+}
 div.xp_slide h2 {
     font-size: 30px;
     padding-bottom: 30px;
@@ -216,6 +219,11 @@ div.xp_slide h4.card-title {
 .card p {
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: 16px;
+}
+.xp_bg {
+    background-image: url("images/treinamento.jpg");
+    height: 440px;
+    background-
 }
 .card h4.card-duration {
     color: rgba(255, 255, 255, 0.9);
