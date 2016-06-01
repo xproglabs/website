@@ -106,6 +106,18 @@ div.xp_slide {
 #metodologia{
     padding-bottom: 70px !important;
 }
+#capacitacao h2,
+#desenvolvimento h2,
+#entrega h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#capacitacao h3,
+#desenvolvimento h3,
+#entrega h3 {
+    text-align: center;
+    padding-top: 25px;
+}
 div.xp_slide h2 {
     font-size: 30px;
     padding-bottom: 30px;
@@ -185,6 +197,21 @@ div.xp_slide h4.card-title {
     color: #383734 !important;
 }
 .xp_orange p {
+}
+.xp_circle_orange,
+.xp_circle_gray_h {
+    background-color: #ee9132;
+    width: 90;
+    height: 90;
+    text-align: center;
+}
+.xp_circle_gray_h {
+    background-color: #383734;
+}
+.xp_circle_orange img,
+.xp_circle_gray_h img {
+    width: 50%;
+    padding-top: 25%;
 }
 .xp_gray_h {
     background-color: #383734;
