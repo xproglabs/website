@@ -58,8 +58,10 @@
             var scroll = $(window).scrollTop();
             if (scroll > 120) {
                 $('nav').addClass('navbar-fixed-top');
+                $('#home').css('margin-top','220px');
             } else {
                 $('nav').removeClass('navbar-fixed-top');
+                $('#home').css('margin-top','0px');
             }
 
             $(".xp_slide").each(function(){
