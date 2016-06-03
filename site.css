@@ -171,6 +171,18 @@ div.xp_slide div.card {
         height: 520px;
     }
 }
+.logo_peq {
+    display: none;
+}
+.logo_grande {
+    text-align: center;
+}
+.navbar-fixed-top .logo_peq {
+    display: block;
+}
+.navbar-fixed-top .logo_grande {
+    display: none;
+}
 div.xp_slide img.card-img-top {
     border: 1px solid #000000;
     border-radius: 50%;

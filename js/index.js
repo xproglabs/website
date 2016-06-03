@@ -54,14 +54,13 @@
                 }
             }
         });
-
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            // if (scroll > 500) {
-            //     $('.topbar').addClass('topbarFixo');
-            // } else {
-            //     $('.topbar').removeClass('topbarFixo');
-            // }
+            if (scroll > 120) {
+                $('nav').addClass('navbar-fixed-top');
+            } else {
+                $('nav').removeClass('navbar-fixed-top');
+            }
 
             $(".xp_slide").each(function(){
                 // console.log($(this).find("h2").eq(0).offset());
