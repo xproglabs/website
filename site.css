@@ -271,21 +271,62 @@ div.xp_slide h4.card-title {
 .card p.card-text {
     padding: 10px;
     text-align: center !important;
-    height: 200px;
+    height: 160px;
     overflow-y: hidden;
 }
-.card span.more{
+.card span.more {
+    width: 32px;
+    height: 32px;
+    background-image: url('images/icons/down.png');
+    background-size: 100%;
     float:right;
     color: white;
     font-size: 20px;
+    display: none;
 }
-.card span.less{
+.card[name="vr"] span.more {
+    display: block;
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    .card span.more {
+        display: block;
+    }
+    .card[name="fb"] p.card-text {
+        height: 132px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .card span.more {
+        display: block;
+    }
+    .card[name="fc"] span.more {
+        display:none;
+    }
+}   
+@media (min-width: 992px) {
+    .card {
+        height: 440px !important;
+    }
+    .card span.more {
+        display: block;
+    }
+    .card[name="fb"] p.card-text {
+        height: 132px;
+    }
+}     
+.card span.less {
     float:right;
     color: white;
+    width: 32px;
+    height: 32px;
+    background-image: url('images/icons/up.png');
+    background-size: 100%;
     font-size: 20px;
+    display: none;
 }
 .xp_orange .card {
     border-color: #383734 !important;
+
 }
 .xp_orange .card h4.card-title {
     color: #383734 !important;
