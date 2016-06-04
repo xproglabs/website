@@ -48,7 +48,7 @@
                     loop:false
                 },
                 1200:{
-                    items:4,
+                    items:3,
                     nav:true,
                     loop:false
                 }
@@ -79,6 +79,16 @@
                         return false;
                 }
             });
+        });
+        $('span.more').click(function() {
+            $(this).parent().find('p.card-text').scrollTop('200');
+            $(this).parent().find('span.more').hide();
+            $(this).parent().find('span.less').show();
+        });
+        $('span.less').click(function() {
+            $(this).parent().find('p.card-text').scrollTop('0');
+            $(this).parent().find('span.less').hide();
+            $(this).parent().find('span.more').show();
         });
 
         $(window).on('hashchange', function(e) {

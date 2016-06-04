@@ -271,6 +271,18 @@ div.xp_slide h4.card-title {
 .card p.card-text {
     padding: 10px;
     text-align: center !important;
+    height: 200px;
+    overflow-y: hidden;
+}
+.card span.more{
+    float:right;
+    color: white;
+    font-size: 20px;
+}
+.card span.less{
+    float:right;
+    color: white;
+    font-size: 20px;
 }
 .xp_orange .card {
     border-color: #383734 !important;
