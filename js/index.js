@@ -54,6 +54,11 @@
                 }
             }
         });
+        $(window).resize(function() {
+            location.reload();
+        });
+        
+
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             if (scroll > 120) {
