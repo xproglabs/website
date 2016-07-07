@@ -134,6 +134,7 @@ div.xp_slide h3.about {
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: center;
+    padding-top: 30%;
 }
 /* card xs */
 div.xp_slide div.card {
@@ -260,7 +261,7 @@ div.xp_slide h4.card-title {
     background-image: url("images/incubacao.jpg");
     background-size: 100%;
     max-width: 100%;
-    max-height: 800px;
+    height: 700px;
     
 }
 .card h4.card-duration {
