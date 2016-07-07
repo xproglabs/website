@@ -376,6 +376,17 @@ input.form-control:focus, textarea.form-control:focus {
     display: none !important;
     color: white;
 }
+button[name="submit"] {
+    width: 100%;
+    background: transparent;
+    color: #e38d13 !important;
+
+}
+button[name="submit"]:hover {
+    color: #000000 !important;
+}
+
+
 #contato form #messageSuccess,
 #contato form #messageError,
 #contato form #messageErrorSMTP {
