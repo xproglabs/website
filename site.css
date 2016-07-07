@@ -134,6 +134,7 @@ div.xp_slide h3.about {
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: center;
+    padding-top: 30%;
 }
 /* card xs */
 div.xp_slide div.card {
@@ -237,7 +238,6 @@ div.xp_slide h4.card-title {
 }
 .xp_gray_h p {
     color: #9d9d8e !important;
-    padding-bottom: 20px !important;
 }
 .xp_gray_l {
     background-color: #484746;
@@ -258,9 +258,11 @@ div.xp_slide h4.card-title {
     font-size: 16px;
 }
 .xp_bg {
-    background-image: url("images/reuniao.png");
-    height: 440px;
-    background-
+    background-image: url("images/incubacao.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    height: 700px;
+    
 }
 .card h4.card-duration {
     color: rgba(255, 255, 255, 0.9);
