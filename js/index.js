@@ -27,11 +27,13 @@
          $(".owl-carousel").owlCarousel({
             loop:true,
             margin:30,
+            dots: true,
             responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
-                    nav:true
+                    nav:false
+                    
                 },
                 544:{
                     items:2,
