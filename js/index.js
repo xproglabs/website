@@ -5,7 +5,7 @@
         var topMenuHeight = $('.navbar.navbar-fixed-top').height();
         var selectMenu = function(hash){
             $(menuContainer).parents(".navbar-toggleable-sm").removeClass("in");
-            if(!hash || hash == "undefined") hash = "#home";
+            if(!hash || hash == "undefined") hash = "#metodologia";
             $(menuContainer).find("li").removeClass("active");
             var toSelect = $(menuContainer).find("li").find("a[href="+hash+"]");
             if(toSelect.size() > 0){
@@ -65,7 +65,7 @@
             var scroll = $(window).scrollTop();
             if (scroll > 120) {
                 $('nav').addClass('navbar-fixed-top');
-                $('#home').css('margin-top','220px');
+                $('#home').css('margin-top','240px');
             } else {
                 $('nav').removeClass('navbar-fixed-top');
                 $('#home').css('margin-top','0px');
