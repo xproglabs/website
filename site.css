@@ -40,7 +40,7 @@ input, textarea, button {
     background-color: #000000;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0;
-    height: 96%;
+    height: 100%;
     -webkit-transition:width 500ms ease-in-out, height 500ms ease-in-out;
     -moz-transition:width 500ms ease-in-out, height 500ms ease-in-out;
     -o-transition:width 500ms ease-in-out, height 500ms ease-in-out;
@@ -154,7 +154,8 @@ div.xp_slide h3.about {
     letter-spacing: 0.03em;
     line-height: 1.3em;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 210px;
+    padding-bottom: 210px;
 }
 /* card xs */
 div.xp_slide div.card {
@@ -279,9 +280,8 @@ div.xp_slide h4.card-title {
 }
 .xp_bg {
     background-image: url("images/incubacao.jpg");
-    background-size: 100%;
-    max-width: 100%;
-    height: 56%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
     
 }
 .card h4.card-duration {
