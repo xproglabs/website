@@ -30,7 +30,7 @@
     padding: 0;
 }
 body {
-    background-color: #383734;
+    background-color: #000000;
 }
 input, textarea, button {
     color: black !important;
@@ -123,15 +123,20 @@ div.xp_slide {
     margin-top: 30%;
 }
 #metodologia{
-    padding-bottom: 25px !important;
-    height: 80% !important;
+    padding: 50px 0 50px 0;
 }
-#capacitacao h2,
-#desenvolvimento h2,
-#entrega h2 {
-    text-align: center;
-    margin-bottom: 20px;
+#equipe {
+    background-color: #383734;
 }
+#equipe img {
+    width: 115%;
+    height: auto;
+}
+/*
+#equipe h4 {
+    text-align: center !important;
+}
+*/
 #capacitacao h3,
 #desenvolvimento h3,
 #entrega h3 {
@@ -167,6 +172,12 @@ div.xp_slide div.card {
     height: 420px;
     width: 80%;
 }
+/* xp_bg xs */
+.xp_bg {
+    background-image: url("images/incubacao.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
 /* breakpoint sm */
 @media (min-width: 544px) {
     div.xp_slide div.card {
@@ -174,17 +185,26 @@ div.xp_slide div.card {
         margin: 0%;
         width: 100%;
     }
+    div.xp_bg {
+        background-size: 100% auto;
+    }
 }
 /* breakpoint md */
 @media (min-width: 768px) {
     div.xp_slide div.card {
         height: 440px;
     }
+    div.xp_bg {
+        background-size: 100% auto;
+    }
 }
 /* breakpoint lg */
 @media (min-width: 992px) {
     div.xp_slide div.card {
         height: 480px;
+    }    
+    div.xp_bg {
+        background-size: 100% auto;
     }
 }
 /* breakpoint xl */
@@ -192,6 +212,9 @@ div.xp_slide div.card {
     div.xp_slide div.card {
         height: 520px;
     }
+    div.xp_bg {
+        background-size: 100% auto;
+    }   
 }
 
 .logo_peq {
@@ -261,15 +284,19 @@ div.xp_slide h4.card-title {
 .xp_gray_h p {
     color: #9d9d8e !important;
 }
-.xp_gray_l {
+/*.xp_gray_l {
     background-color: #484746;
-}
+}*/
 .xp_gray_l h2 {
     color: #ee9132 !important;
 }
 .xp_gray_l h3 {
     color: rgba(255, 255, 255, 0.9) !important;
     margin-bottom: 40px !important;
+}
+.xp_gray_l h4 {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 17px !important;
 }
 .xp_gray_l p {
     color: #9d9d8e !important;
@@ -279,12 +306,7 @@ div.xp_slide h4.card-title {
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: 16px;
 }
-.xp_bg {
-    background-image: url("images/incubacao.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    
-}
+
 .card h4.card-duration {
     color: rgba(255, 255, 255, 0.9);
     font-family: "Oswald-Medium";
