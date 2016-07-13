@@ -129,7 +129,7 @@ div.xp_slide {
     background-color: #383734;
 }
 #equipe img {
-    width: 115%;
+    width: 100%;
     height: auto;
 }
 /*
@@ -255,21 +255,6 @@ div.xp_slide h4.card-title {
     color: #383734 !important;
 }
 .xp_orange p {
-}
-.xp_circle_orange,
-.xp_circle_gray_h {
-    background-color: #ee9132;
-    width: 90;
-    height: 90;
-    text-align: center;
-}
-.xp_circle_gray_h {
-    background-color: #383734;
-}
-.xp_circle_orange img,
-.xp_circle_gray_h img {
-    width: 50%;
-    padding-top: 25%;
 }
 .xp_gray_h {
     background-color: #383734;
@@ -412,6 +397,9 @@ div.xp_slide h4.card-title {
 }
 */
 
+#contato.righside {
+    background-color: #ee9132 !important;
+}
 input.form-control:focus, textarea.form-control:focus {
     border-color: #f7941e;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(247, 147, 29, 0.6);

@@ -84,34 +84,34 @@
 		</div>
 		<!-- #equipe -->
 		<div class="xp_slide xp_gray_l" id="equipe">
-			<div class="container">
+			<div class="">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1">
 						<h2>EQUIPE</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 col-md-4 col-lg-4">
+					<div class="col-xs-6 col-md-4 col-lg-2">
 						<img src="images/fernando.jpg">
 						<h4>FERNANDO BOMBASSARO</h4>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-4">	
+					<div class="col-xs-6 col-md-4 col-lg-2">	
 						<img src="images/valdo.jpg">
 						<h4>VALDO RAYA</h4>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-4">	
+					<div class="col-xs-6 col-md-4 col-lg-2">	
 						<img src="images/fabricio.jpg">
 						<h4>FABRICIO COSTA</h4>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-4">	
+					<div class="col-xs-6 col-md-4 col-lg-2">	
 						<img src="images/mauricio.jpg">
 						<h4>MAURICIO MARTINEZ</h4>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-4">
+					<div class="col-xs-6 col-md-4 col-lg-2">
 						<img src="images/rafael.jpg">
 						<h4>RAFAEL DRUZIAN</h4>
 					</div>
-					<div class="col-xs-6 col-md-4 col-lg-4">	
+					<div class="col-xs-6 col-md-4 col-lg-2">	
 						<img src="images/giovanni.jpg">
 						<h4>GIOVANNI BOMBASSARO</h4>
 					</div>
@@ -318,53 +318,47 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1">
-						<h2>CONTATO</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-1"></div>
-					<div class="col-xs-10">
-						<div class="row">
-							<form action="contact.php" method="POST" onsubmit="return false;" id="contact">
-								<div class="col-md-6">
-									<div class="form-group">
-										<!-- div.xp_slide[name="contato"] input[name="nome"] -->
-										<input type="text" class="form-control" name="nome" placeholder="Nome" required>
-									</div>
-									<div class="form-group">
-										<!-- div.xp_slide[name="contato"] input[name="email"] -->
-										<input type="email" class="form-control" name="email" placeholder="E-mail" required>
-									</div>
-									<div class="form-group">
-										<!-- div.xp_slide[name="contato"] input[name="telefone"] -->
-										<input type="text" class="form-control" name="telefone" placeholder="Telefone">
-									</div>
-									<div class="form-group">
-										<!-- div.xp_xp_slide[name="contato"] input[name="assunto"] -->
-										<input type="text" class="form-control" name="assunto" placeholder="Assunto" required>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<!-- textarea -->
-										<textarea class="form-control" rows="5" placeholder="Mensagem" name="message" required></textarea>
-									</div>
-									<div class="form-group">
-										<button class="btn btn-warning" name="submit" style="float: left;">ENVIAR</button>
-										<!-- div para agrupar as mensagens -->
-										<div id="messageBox"></div>
-										<div id="messageError">Revise os campos do formulário e tente novamente.</div>
-										<div id="messageErrorSMTP">Há um erro no servidor, tente mais tarde.</div>
-										<div id="messageSuccess">Seu email foi enviado com sucesso.</div>
-									</div>
-								</div>
-							</form>
+						<div class="col-md-6">
+							<h2>CONTATO</h2>
 						</div>
-					</div>
-					<div class="col-xs-1"></div>
+						<div class="col-md-5 col-md-offset-1">
+							<form action="contact.php" method="POST" onsubmit="return false;" id="contact">
+								<div class="form-group">
+									<!-- div.xp_slide[name="contato"] input[name="nome"] -->
+									<input type="text" class="form-control" name="nome" placeholder="Nome" required>
+								</div>
+								<div class="form-group">
+									<!-- div.xp_slide[name="contato"] input[name="email"] -->
+									<input type="email" class="form-control" name="email" placeholder="E-mail" required>
+								</div>
+								<div class="form-group">
+									<!-- div.xp_slide[name="contato"] input[name="telefone"] -->
+									<input type="text" class="form-control" name="telefone" placeholder="Telefone">
+								</div>
+								<div class="form-group">
+									<!-- div.xp_xp_slide[name="contato"] input[name="assunto"] -->
+									<input type="text" class="form-control" name="assunto" placeholder="Assunto" required>
+								</div>
+								<div class="form-group">
+									<!-- textarea -->
+									<textarea class="form-control" rows="5" placeholder="Mensagem" name="message" required></textarea>
+								</div>
+								<div class="form-group">
+									<button class="btn btn-warning" name="submit" style="float: left;">ENVIAR</button>
+									<!-- div para agrupar as mensagens -->
+									<div id="messageBox"></div>
+									<div id="messageError">Revise os campos do formulário e tente novamente.</div>
+									<div id="messageErrorSMTP">Há um erro no servidor, tente mais tarde.</div>
+									<div id="messageSuccess">Seu email foi enviado com sucesso.</div>
+								</div>
+							</form>	
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
+			
+		
 		<!-- SLIDES ANTIGOS -->
 		<!--
 		<div class="xp_slide xp_gray_h" id="identidade">
